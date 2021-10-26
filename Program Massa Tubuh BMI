@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+// program untuk mengetahui massa tubuh ideal berdasarkan BMI //
+
+int yesorno;
+float massa;
+float tinggi;
+
+    cout<< "Selamat Datang \nAnda ingin mengetahui massa tubuh ideal berdasarkan BMI tapi malas search di google?";
+    cout<< "\nTekan 1 jika iya atau 0 jika tidak\n";
+    cin>> yesorno; 
+        if (yesorno==1) {
+        cout<< "Masukkan tinggi badan dalam cm\n";
+        cin>> tinggi;
+        // karena BMI normal nilainya sekitar 22 kalau pake meter, kita pakai 0.0022 karena ini cm //
+        massa=tinggi*tinggi*0.0022;
+        cout<< "SELAMAT! massa ideal anda adalah " << massa << " kg";
+        }
+        
+        else 
+        cout<< "Silakan angkat tangan dari sini jika demikian, trims";
+    return 0;
+}
